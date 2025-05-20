@@ -12,7 +12,7 @@ function Projects() {
   }
 
   return (
-    <section className="py-20 px-4 md:px-8 lg:px-16 bg-gray-50 dark:bg-[#0A0A14]">
+    <section className="py-20 px-4 md:px-8 lg:px-16 bg-white dark:bg-[#0A0A14]">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-black dark:text-white text-center md:text-left">
           {projects.title}

@@ -45,11 +45,12 @@ const HeroSection = () => {
         src={ellipse10}
         alt=""
         aria-hidden="true"
-        className="hidden md:block absolute w-[111px] h-[111px] left-[421px] top-[-45px]"
+        className="hidden md:block absolute w-[160px] h-[120px] left-[421px] top-[-45px]"
+      
       />
       <div 
         aria-hidden="true"
-        className="hidden md:block absolute w-[121px] h-[121px] left-[80%] top-[90%] border-[21px] border-[#D9D9D9] rounded-full" 
+        //className="hidden md:block absolute w-[121px] h-[121px] left-[80%] top-[90%] border-[21px] border-[#D9D9D9] rounded-full" 
       />
 
       {/* Main content container with responsive flex layout */}
@@ -66,7 +67,7 @@ const HeroSection = () => {
             {/* Pink background strip for text highlight */}
             <div 
               aria-hidden="true"
-              className="absolute left-0 top-[24px] w-[140px] h-[22px] bg-[#E92577] rounded-[12px] z-0" 
+             className="absolute left-0 top-[24px] w-[140px] h-[22px] bg-[#E92577] rounded-[12px] z-0" 
             />
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 leading-tight relative z-10">
               {hero.intro}
@@ -110,7 +111,7 @@ const HeroSection = () => {
           <img
             src={profileImage}
             alt="profile"
-            className="absolute w-[277px] md:w-[341px] h-[277px] md:h-[341px] object-cover rounded-[22px]"
+           className="absolute w-[277px] md:w-[341px] h-[277px] md:h-[341px] object-cover rounded-[22px]"
             style={{ 
               left: '50%', 
               top: '30px',

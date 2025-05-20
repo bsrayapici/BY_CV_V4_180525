@@ -7,17 +7,18 @@ function Skills() {
   const skills = data[language].skillsSection;
 
   return (
-    <section className="py-20 px-4 md:px-8 lg:px-16 bg-white dark:bg-[#0A0A14] relative overflow-hidden">
-      {/* Gray decorative element on the left */}
+<section className="min-h-[350px] py-20 px-4 md:px-8 lg:px-16 bg-white dark:bg-[#0A0A14] relative overflow-visible">      {/* Gray decorative element  tonhe left */}
       <div 
         aria-hidden="true"
-        className="absolute left-0 top-1/2 w-[40px] md:w-[80px] h-[40px] md:h-[80px] bg-gray-700 rounded-r-full transform -translate-y-1/2"
-      />
+      
+  className="absolute left-0 top-[90%] w-[40px] md:w-[100px] h-[40px] md:h-[80px] bg-gray-600 rounded-r-full transform -translate-y-1/2"
+/>
+    
       
       {/* Light gray circle in the top-right */}
       <div 
-        aria-hidden="true"
-        className="absolute right-0 top-0 w-[60px] md:w-[120px] h-[60px] md:h-[120px] border-[12px] md:border-[24px] border-gray-200 dark:border-gray-700 rounded-full"
+       // aria-hidden="true"
+        className="absolute right-[300px] top-[-50px] w-[60px] md:w-[120px] h-[60px] md:h-[120px] border-[12px] md:border-[24px] border-gray-200 dark:border-gray-700 rounded-full"
       />
 
       <div className="max-w-7xl mx-auto">

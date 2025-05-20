@@ -11,12 +11,15 @@ function Profile() {
   }
 
   return (
-    <section className="py-20 px-4 md:px-8 lg:px-16 bg-white dark:bg-[#0A0A14] relative overflow-hidden">
+    <section className="py-20 px-4 md:px-8 lg:px-16 bg-gray-50 dark:bg-[#0A0A14] relative overflow-visible">
       {/* Pink decorative circle */}
       <div 
         aria-hidden="true"
-        className="absolute right-0 bottom-0 w-[80px] md:w-[160px] h-[80px] md:h-[160px] rounded-full bg-[#E92577] opacity-20"
       />
+      <div 
+  
+      className="absolute right-[-60px] bottom-[-70px] w-[160px] h-[160px] rounded-full border-[24px] border-[#E92577]"
+    />
 
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center text-black dark:text-white">
