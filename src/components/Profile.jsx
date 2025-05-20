@@ -11,15 +11,12 @@ function Profile() {
   }
 
   return (
-    <section className="py-20 px-4 md:px-8 lg:px-16 bg-gray-50 dark:bg-[#0A0A14] relative overflow-visible">
+    <section className="min-h-[350px] py-20 px-4 md:px-8 lg:px-16 bg-gray-50 dark:bg-[#0A0A14] relative overflow-visible">
       {/* Pink decorative circle */}
-      <div 
-        aria-hidden="true"
-      />
-      <div 
-  
-      className="absolute right-[-60px] bottom-[-70px] w-[160px] h-[160px] rounded-full border-[24px] border-[#E92577]"
-    />
+      <div aria-hidden="true"></div>
+      <div
+        className="absolute right-[-60px] bottom-[-70px] w-[160px] h-[160px] rounded-full border-[24px] border-[#E92577]"
+      ></div>
 
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center text-black dark:text-white">
@@ -28,7 +25,7 @@ function Profile() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           {/* Basic Information */}
-          <div className="bg-white dark:bg-gray-800 rounded-3xl p-6 md:p-8 shadow-lg">
+        <div className="bg-white dark:bg-[#0a0a0a] rounded-3xl p-6 md:p-8 shadow-2xl">
             <h3 className="text-xl md:text-2xl font-bold text-[#E92577] mb-6 md:mb-8">
               Basic Information
             </h3>
@@ -53,20 +50,22 @@ function Profile() {
           </div>
 
           {/* About Me */}
-          <div className="bg-white dark:bg-gray-800 rounded-3xl p-6 md:p-8 shadow-lg">
-            <h3 className="text-xl md:text-2xl font-bold mb-6 md:mb-8 relative inline-block">
-              <span className="relative z-10">About me</span>
-              <div className="absolute -z-10 left-0 right-0 bottom-0 h-3 bg-[#7aaef3] opacity-50"></div>
-            </h3>
-            <div className="space-y-4 md:space-y-6 text-gray-600 dark:text-gray-300">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.
-              </p>
-              <p>
-                Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!
-              </p>
-            </div>
-          </div>
+        <div className="p-6 md:p-8 shadow-none text-gray-700 dark:text-gray-300">
+        <h3 className="relative text-2xl font-normal font-[Playfair_Display] text-black inline-block">
+  <span className="relative z-10">About me</span> <br></br> <br></br> 
+  <div className="absolute left-[-10px]  top-[17px] w-[80px] h-[18px] bg-sky-200 rounded-[12px] z-0"></div>
+</h3>
+  <div className="space-y-4 md:space-y-6 text-sm leading-relaxed">
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.
+    </p>
+    <br></br>
+    <p>
+      Minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!
+    </p>
+    <br></br>
+  </div>
+</div>
         </div>
       </div>
     </section>
