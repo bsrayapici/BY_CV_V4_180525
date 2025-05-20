@@ -23,7 +23,7 @@ function Projects() {
         {/* Yan yana iki kart */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Card 1 - Mavi Arka Plan */}
-          <div className="relative w-full h-[668px] bg-[#e0f2ff] rounded-2xl p-6 shadow-lg">
+          <div className="relative w-full h-[700px] bg-[#e0f2ff] rounded-2xl p-6 shadow-lg">
             <h3 className="text-2xl font-bold mb-4 text-black">Random Jokes</h3>
             <p className="text-gray-700 mb-4">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.
@@ -41,7 +41,7 @@ function Projects() {
             </div>
 
             {/* Laptop Görseli */}
-            <div className="absolute left-0 right-0 bottom-0 translate-y-[40%] w-full pointer-events-none">
+            <div className="absolute left-0 right-0 bottom-1 top-20 translate-y-[40%] w-full pointer-events-none">
               <div className="relative w-full max-w-[500px] mx-auto">
                 <img
                   src={screenPreview}
@@ -58,7 +58,7 @@ function Projects() {
           </div>
 
           {/* Card 2 - Mint Yeşili Arkaplan */}
-          <div className="relative w-full h-[668px] bg-[#D9F6F1] rounded-2xl p-6 shadow-lg">
+          <div className="relative w-full h-[700px] bg-[#D9F6F1] rounded-2xl p-6 shadow-lg">
             <h3 className="text-2xl font-bold mb-4 text-black">Are you bored?</h3>
             <p className="text-gray-700 mb-4">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!
@@ -76,7 +76,7 @@ function Projects() {
             </div>
 
             {/* Laptop Görseli */}
-            <div className="absolute left-0 right-0 bottom-0 translate-y-[40%] w-full pointer-events-none">
+            <div className="absolute left-0 right-0 bottom-1 top-20 translate-y-[40%] w-full pointer-events-none">
               <div className="relative w-full max-w-[500px] mx-auto">
                 <img
                   src={screenPreviewTwo}
@@ -94,10 +94,7 @@ function Projects() {
           </div>
           <br></br>
           <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          
+
         </div>
       </div>
      
