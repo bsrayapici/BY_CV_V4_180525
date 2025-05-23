@@ -14,17 +14,16 @@ function Skills() {
  // className="absolute left-0 top-[90%] w-[160px] md:w-[120px] h-[-20px] md:h-[80px] bg-gray-600 rounded-r-full transform -translate-y-1/2"
 ///>
 <section className="min-h-[350px] py-20 px-4 md:px-8 lg:px-16 bg-white dark:bg-[#2a3141] relative overflow-visible">
-  
-  {/* ✅ Sol alt: İnce gri dekoratif dikdörtgen (rectangle) */}
-  <div 
+  {/* ✅ Sol altta yarım oval şekil */}
+  <div
     aria-hidden="true"
-    className="absolute left-0 top-[90%] w-[160px] md:w-[120px] h-[160px] md:h-[20px] bg-[#525252] border-[24px] rounded-r-full transform -translate-y-1/2"
-  />
+    className="absolute left-0 bottom-[25px] w-[32px] h-[16px] sm:w-[40px] sm:h-[20px] md:w-[60px] md:h-[24px] bg-[#525252] rounded-r-full"
+  ></div>
     
       
       {/* Light gray circle in the top-right */}
       <div 
-       // aria-hidden="true" - HALKA 
+        aria-hidden="true"
         className="absolute right-[300px] top-[-50px] w-[60px] md:w-[120px] h-[60px] md:h-[120px] border-[12px] md:border-[24px] border-gray dark:border-gray-700 rounded-full"
       />
 

@@ -11,14 +11,15 @@ const HeroSection = () => {
   const hero = data[language].heroSection;
 
   return (
-    <section className="relative w-full min-h-screen bg-[#F4F4F4] dark:bg-[#0A0A14] text-black dark:text-white px-4 md:px-8 lg:px-16 overflow-visible">
-      {/* Decorative pink rectangle (dokunulmadı) */}
+    <section className="relative w-full h-full py-12 md:py-20 overflow-hidden bg-[#F4F4F4] dark:bg-[#0A0A14] text-black dark:text-white px-4 md:px-8 lg:px-16">
+      
+      {/* 🎯 Pink rectangle - centered to profile image */}
       <div
-        aria-hidden="false"
-        className="absolute w-[217px] h-[59px] left-[1316px] top-[636px] bg-[#EA2678] rounded-[29.5px]"
-      />
+    aria-hidden="true"
+    className="absolute left-0 bottom-[25px] w-[32px] h-[16px] sm:w-[40px] sm:h-[20px] md:w-[60px] md:h-[24px] bg-[#525252] rounded-r-full"
+  ></div>
 
-      {/* Decorative circle top-left */}
+      {/* 🎯 Decorative circle top-left */}
       <img
         src={ellipse10}
         alt=""
@@ -26,9 +27,9 @@ const HeroSection = () => {
         className="hidden md:block absolute w-[160px] h-[120px] left-[421px] top-[-45px]"
       />
 
-      {/* Content Layout */}
-      <div className="flex flex-col lg:flex-row items-center justify-between max-w-7xl mx-auto pt-20 lg:pt-32 gap-12">
-        {/* Left: Text */}
+      <div className="flex flex-col lg:flex-row items-center justify-between max-w-7xl mx-auto gap-12">
+        
+        {/* Left Side: Text Content */}
         <div className="w-full lg:w-1/2 relative z-10 text-center lg:text-left">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             {hero.greeting}
@@ -43,11 +44,6 @@ const HeroSection = () => {
               {hero.intro}
             </h2>
           </div>
-
-          <p
-            className="text-base md:text-lg mb-8 mt-2"
-            dangerouslySetInnerHTML={{ __html: hero.ctaHTML }}
-          />
 
           <div className="flex justify-center lg:justify-start gap-6">
             {hero.socials.map((item, index) => (
@@ -66,15 +62,20 @@ const HeroSection = () => {
               </a>
             ))}
           </div>
+
+          <p
+            className="text-base md:text-lg mb-8 mt-2"
+            dangerouslySetInnerHTML={{ __html: hero.ctaHTML }}
+          />
         </div>
 
-        {/* Right: Image + background */}
-        <div className="relative w-[280px] md:w-[344px] h-[280px] md:h-[343px]">
+        {/* Right Side: Profile Image in Pink Box */}
+        <div className="relative w-[260px] md:w-[320px] h-[260px] md:h-[320px]">
           <div className="w-full h-full bg-[#E92577] rounded-[32px]" />
           <img
             src={profileImage}
             alt="profile"
-            className="absolute w-[277px] md:w-[341px] h-[277px] md:h-[341px] object-cover rounded-[22px]"
+            className="absolute w-[257px] md:w-[317px] h-[257px] md:h-[317px] object-cover rounded-[22px]"
             style={{
               left: '50%',
               top: '30px',
