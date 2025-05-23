@@ -17,7 +17,7 @@ function Skills() {
   {/* ✅ Sol altta yarım oval şekil */}
   <div
     aria-hidden="true"
-    className="absolute left-0 bottom-[25px] w-[32px] h-[16px] sm:w-[40px] sm:h-[20px] md:w-[60px] md:h-[24px] bg-[#525252] rounded-r-full"
+    className="absolute left-0 bottom-[25px] w-[32px] h-[16px] sm:w-[40px] sm:h-[20px] md:w-[60px] md:h-[35px] bg-[#525252] rounded-r-full"
   ></div>
     
       
