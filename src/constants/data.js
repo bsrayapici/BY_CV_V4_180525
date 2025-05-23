@@ -8,6 +8,7 @@ export const data = {
       socials: [
         {
           logo: '/src/assets/logo-linkeding.jpg',
+          darkLogo: '/src/assets/logo-linkeding.jpg',
           alt_text: 'linkedin',
           link: 'https://example.com',
         },
@@ -15,6 +16,7 @@ export const data = {
           logo: '/src/assets/logo-github.png',
           alt_text: 'github',
           link: 'https://github.com',
+          darkLogo: "https://img.icons8.com/?size=100&id=v551nqGeHhGn&format=png&color=000000",
         },
       ],
       ctaHTML:

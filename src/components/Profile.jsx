@@ -43,8 +43,7 @@ function Profile() {
 
           {/* Education */}
           <div className="p-6 md:p-8 text-gray-700 dark:text-gray-300">
-            <h3 className="relative text-2xl font-normal font-[Playfair_Display] text-black inline-block">
-              <span className="relative z-10">{profile.education.title}</span>
+          <h3 className="relative text-2xl font-normal font-[Playfair_Display] text-black dark:text-white inline-block">              <span className="relative z-10">{profile.education.title}</span>
               <div className="absolute left-[-10px] top-[17px] w-[80px] h-[18px] bg-sky-200 rounded-[12px] z-0"></div>
             </h3>
             <div className="space-y-4 md:space-y-6 text-sm leading-relaxed">
