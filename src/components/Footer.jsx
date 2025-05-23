@@ -14,19 +14,19 @@ function Footer() {
     <footer className="relative w-full px-4 md:px-8 lg:px-16 py-20 flex flex-col md:flex-row items-center md:items-start justify-center gap-8">
     <div className="text-xl md:text-2xl lg:text-3xl font-bold text-black dark:text-white flex flex-col items-center md:items-start text-center md:text-left leading-snug">
       
-      <div className="relative inline-block">
-        <span>{firstLine.split('work together')[0]}</span>
-  
-        {/* ÇALIŞAN versiyon */}
-        <span className="relative inline-block px-1">
-          <span className="absolute left-0 bottom-0 w-full h-[0.5em] bg-[#7aaef3] opacity-50 rounded-md -z-10"></span>
-          <span className="relative z-10">work together</span>
-        </span>
-  
-        <span>{firstLine.split('work together')[1]}</span>
-      </div>
-  
-      <span>{secondLine}</span>
+    <div className="relative inline-block">
+  <span>{firstLine.split('work together')[0]}</span>
+
+  {/* Altı çizili versiyon */}
+  <span className="inline-block border-b-[15px] border-[#93d0f4] mx-1 rounded-[8px] pb-0 leading-[0.3] left-[12px]
+">
+  work together
+</span>
+
+  <span>{firstLine.split('work together')[1]}</span>
+</div>
+
+<span>{secondLine}</span>
     </div>
       <div className="flex flex-col gap-4 items-center md:items-start">
         <a 

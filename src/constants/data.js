@@ -84,7 +84,7 @@ export const data = {
           title: 'Random Jokes',
           description:
             'A fun web app that generates random jokes using a REST API',
-          image: '/src/assets/Rectangle 2.png',
+          image: '/src/assets/ornek.jpg',
           technologies: ['React', 'Vite', 'Axios'],
           demo: 'https://example.com/demo1',
           github: 'https://github.com/example/random-jokes',
@@ -93,7 +93,7 @@ export const data = {
           title: 'Are you bored?',
           description:
             "An interactive app suggesting activities when you're bored",
-          image: '/src/assets/Rectangle 22.png',
+          image: '/src/assets/ornek_iki.jpg',
           technologies: ['React', 'Redux', 'Axios'],
           demo: 'https://example.com/demo2',
           github: 'https://github.com/example/bored-app',
@@ -140,6 +140,18 @@ export const data = {
           name: 'JavaScript',
           icon: '/src/assets/darkmode/node.png',
         },
+        { 
+        name: 'Figma', 
+        icon: '/src/assets/darkmode/figma.png' 
+      },
+  { 
+    name: 'Redux', 
+    icon: '/src/assets/darkmode/redux.png' 
+  },
+  { 
+    name: 'VS Code', 
+    icon: '/src/assets/darkmode/redux-1.png' 
+    },
       ],
     },
     profileSection: {
@@ -177,7 +189,7 @@ export const data = {
           title: 'Rastgele Şakalar',
           description:
             'REST API kullanarak rastgele şakalar üreten eğlenceli bir web uygulaması',
-          image: '/src/assets/Rectangle 2.png',
+          image: '/src/assets/ornek.jpg',
           technologies: ['React', 'Vite', 'Axios'],
           demo: 'https://example.com/demo1',
           github: 'https://github.com/example/random-jokes',
@@ -186,7 +198,7 @@ export const data = {
           title: 'Sıkıldın mı?',
           description:
             'Sıkıldığınızda aktiviteler öneren interaktif bir uygulama',
-          image: '/src/assets/Rectangle 22.png',
+          image: '/src/assets/ornek_iki.jpg',
           technologies: ['React', 'Redux', 'Axios'],
           demo: 'https://example.com/demo2',
           github: 'https://github.com/example/bored-app',
