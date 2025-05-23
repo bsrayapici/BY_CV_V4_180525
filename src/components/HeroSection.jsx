@@ -16,7 +16,7 @@ const HeroSection = () => {
       {/* 🎯 Pink rectangle - centered to profile image */}
       <div
   aria-hidden="true"
-  className="absolute right-0 bottom-[25px] w-[32px] h-[16px] sm:w-[40px] sm:h-[20px] md:w-[60px] md:h-[24px] bg-[#EA2678] rounded-r-full rotate-180"
+  className="absolute right-0 bottom-[25px] w-[32px] h-[16px] sm:w-[40px] sm:h-[20px] md:w-[60px] md:h-[35px] bg-[#EA2678] rounded-r-full rotate-180"
 ></div>
 
       {/* 🎯 Decorative circle top-left */}
