@@ -24,20 +24,20 @@ function Skills() {
         <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center text-black dark:text-white">
           {skills.title}
         </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-12 justify-items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 md:gap-16 justify-items-center">
           {skills.skills.map((skill, index) => (
             <div 
               key={index}
-              className="flex flex-col items-center gap-2.5 w-[146px] h-[166px]"
+              className="flex flex-col items-center gap-6 w-[146px]"
             >
-              <div className="flex items-center justify-center p-3 md:p-4 w-16 md:w-24 h-16 md:h-24 rounded-lg transition-transform hover:scale-110">
+              <div className="flex items-center justify-center w-[100px] h-[100px] transition-transform hover:scale-110">
                 <img 
                   src={skill.icon} 
                   alt={skill.name}
-                  className="w-10 md:w-16 h-10 md:h-16 object-contain"
+                  className="w-full h-full object-contain"
                 />
               </div>
-              <h3 className="text-xs md:text-sm font-medium text-black dark:text-white uppercase tracking-wider text-center">
+              <h3 className="text-base md:text-lg font-medium text-black dark:text-white tracking-wider text-center">
                 {skill.name}
               </h3>
             </div>
