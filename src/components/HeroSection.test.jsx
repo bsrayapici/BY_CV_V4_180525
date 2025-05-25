@@ -1,33 +1,46 @@
 import { render, screen } from '@testing-library/react';
 import HeroSection from './HeroSection';
-import { ThemeProvider } from '../contexts/ThemeContext';
-import { LanguageProvider } from '../contexts/LanguageContext';
+import { ThemeContext } from '../contexts/ThemeContext';
+import { LanguageContext } from '../contexts/LanguageContext';
+import { data } from '../constants/data';
 
-describe('HeroSection Component', () => {
-  const renderHeroSection = () => {
-    render(
-      <LanguageProvider>
-        <ThemeProvider>
-          <HeroSection />
-        </ThemeProvider>
-      </LanguageProvider>
-    );
-  };
+const mockLanguage = 'en';
+const mockTheme = 'light';
 
+const mockHero = data[mockLanguage].heroSection;
+
+const renderWithProviders = () => {
+  render(
+    <ThemeContext.Provider value={{ theme: mockTheme }}>
+      <LanguageContext.Provider value={{ language: mockLanguage }}>
+        <HeroSection />
+      </LanguageContext.Provider>
+    </ThemeContext.Provider>
+  );
+};
+
+describe('HeroSection', () => {
   test('renders greeting and intro text', () => {
-    renderHeroSection();
-    expect(screen.getByText(/Hi!/i)).toBeInTheDocument();
-    expect(screen.getByText(/I'm Almila/i)).toBeInTheDocument();
+    renderWithProviders();
+
+    // Başlıkları test et
+    expect(screen.getByText(mockHero.greeting)).toBeInTheDocument();
+    expect(screen.getByText(mockHero.intro)).toBeInTheDocument();
   });
 
   test('renders social media links', () => {
-    renderHeroSection();
-    expect(screen.getByAltText('linkedin')).toBeInTheDocument();
-    expect(screen.getByAltText('github')).toBeInTheDocument();
+    renderWithProviders();
+
+    mockHero.socials.forEach(social => {
+      expect(screen.getByAltText(social.alt_text)).toBeInTheDocument();
+    });
   });
 
   test('renders profile image', () => {
-    renderHeroSection();
-    expect(screen.getByAltText('profile')).toBeInTheDocument();
+    renderWithProviders();
+
+    const profileImg = screen.getByAltText('profile');
+    expect(profileImg).toBeInTheDocument();
+    expect(profileImg).toHaveAttribute('src', expect.stringContaining('profile-image'));
   });
-});
+}); 

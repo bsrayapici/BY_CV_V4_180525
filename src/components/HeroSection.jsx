@@ -32,18 +32,18 @@ const HeroSection = () => {
         
         {/* Left Side: Text Content */}
         <div className="w-full lg:w-1/2 relative z-10 text-center lg:text-left">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+          <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             {hero.greeting}
-          </h1>
+          </h3>
 
           <div className="relative inline-block">
             <div
               aria-hidden="true"
               className="absolute left-0 top-[24px] w-[140px] h-[22px] bg-[#E92577] rounded-[12px] z-0"
             />
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 leading-tight relative z-10">
+            <p className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 leading-tight relative z-10">
               {hero.intro}
-            </h2>
+            </p>
           </div>
 
           <div className="flex justify-center lg:justify-start gap-6">
