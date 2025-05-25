@@ -6,17 +6,20 @@ import { data } from '../constants/data';
 /**
  * ProjectDetail Component
  * 
- * Displays detailed information about a specific project:
+ * Displays detailed information about a specific project with:
  * - Project title and description
- * - Full-size project image
- * - Technologies used
+ * - Technologies used tags
  * - Live demo and source code links
+ * - Project screenshot
+ * - Back navigation
  * 
  * Features:
  * - Responsive layout
  * - Dark mode support
- * - Navigation back to projects
- * - Error handling for invalid project IDs
+ * - Error handling for invalid IDs
+ * - Accessible navigation
+ * 
+ * @component
  */
 function ProjectDetail() {
   const { id } = useParams();
@@ -24,7 +27,6 @@ function ProjectDetail() {
   const projects = data[language]?.projectsSection.items;
   const project = projects?.[parseInt(id)];
 
-  // Handle invalid project ID
   if (!project) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -47,53 +49,47 @@ function ProjectDetail() {
   return (
     <div className="py-20 px-4 md:px-8 lg:px-16">
       <div className="max-w-4xl mx-auto">
-        {/* Back navigation */}
         <Link 
           to="/" 
-          className="text-[#E92577] hover:underline mb-8 inline-block"
+          className="text-[#E92577] hover:underline mb-8 inline-flex items-center gap-2"
           aria-label="Back to projects list"
         >
-          ← Back to projects
+          <span aria-hidden="true">←</span> Back to projects
         </Link>
         
-        {/* Project details card */}
-        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
-          {/* Project image */}
+        <article className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
           <img 
             src={project.image} 
             alt={`${project.title} preview`}
             className="w-full h-[400px] object-cover"
+            loading="lazy"
           />
           
           <div className="p-8">
-            {/* Project title */}
             <h1 className="text-3xl font-bold mb-4 text-black dark:text-white">
               {project.title}
             </h1>
             
-            {/* Project description */}
             <p className="text-gray-600 dark:text-gray-400 mb-6">
               {project.description}
             </p>
             
-            {/* Technologies section */}
             <div className="mb-8">
               <h2 className="text-xl font-semibold mb-4 text-black dark:text-white">
                 Technologies Used
               </h2>
-              <div className="flex flex-wrap gap-2">
+              <ul className="flex flex-wrap gap-2" aria-label="Technologies used in this project">
                 {project.technologies.map((tech, i) => (
-                  <span 
+                  <li 
                     key={i}
                     className="px-3 py-1 bg-[#E92577] text-white rounded-full text-sm"
                   >
                     {tech}
-                  </span>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
             
-            {/* Action buttons */}
             <div className="flex flex-wrap gap-4">
               <a 
                 href={project.demo}
@@ -115,7 +111,7 @@ function ProjectDetail() {
               </a>
             </div>
           </div>
-        </div>
+        </article>
       </div>
     </div>
   );
