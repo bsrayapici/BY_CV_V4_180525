@@ -30,14 +30,13 @@ function Skills() {
               key={index}
               className="flex flex-col items-center gap-6 transform transition-transform hover:scale-110"
             >
-              <div className="w-24 md:w-32 h-24 md:h-32 flex items-center justify-center p-4 md:p-6">
+              <div className="w-32 md:w-40 h-32 md:h-40 flex items-center justify-center p-4 md:p-6">
                 <img 
                   src={skill.icon} 
                   alt={skill.name}
                   className="w-full h-full object-contain"
                 />
               </div>
-
             </div>
           ))}
         </div>
