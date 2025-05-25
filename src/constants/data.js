@@ -13,10 +13,10 @@ export const data = {
           link: 'https://example.com',
         },
         {
-          logo: '/src/assets/logo-github.png',
+          logo: '/src/assets/github-white.png',
           alt_text: 'github',
           link: 'https://github.com',
-          darkLogo: "https://img.icons8.com/?size=100&id=v551nqGeHhGn&format=png&color=000000",
+         // darkLogo: '/src/assets/github-white.png'
         },
       ],
       ctaHTML:
@@ -122,6 +122,7 @@ export const data = {
           logo: '/src/assets/logo-github.png',
           alt_text: 'github',
           link: 'https://github.com',
+         // darkLogo: '/src/assets/github-white.png' ,
         },
       ],
       ctaHTML:

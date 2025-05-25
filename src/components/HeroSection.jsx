@@ -8,6 +8,7 @@ import ellipse10 from '../assets/Ellipse 10.png';
 
 const HeroSection = () => {
   const { language } = useLanguage();
+  const { theme } = useTheme(); // dark veya light
   const hero = data[language].heroSection;
 
   return (
@@ -15,9 +16,9 @@ const HeroSection = () => {
       
       {/* 🎯 Pink rectangle - centered to profile image */}
       <div
-  aria-hidden="true"
-  className="absolute right-0 bottom-[25px] w-[32px] h-[16px] sm:w-[40px] sm:h-[20px] md:w-[60px] md:h-[35px] bg-[#EA2678] rounded-r-full rotate-180"
-></div>
+        aria-hidden="true"
+        className="absolute right-0 bottom-[25px] w-[32px] h-[16px] sm:w-[40px] sm:h-[20px] md:w-[60px] md:h-[35px] bg-[#EA2678] rounded-r-full rotate-180"
+      ></div>
 
       {/* 🎯 Decorative circle top-left */}
       <img
@@ -55,7 +56,7 @@ const HeroSection = () => {
                 className="hover:opacity-80 transition-opacity"
               >
                 <img
-                  src={item.logo}
+                  src={theme === 'dark' && item.logoDark ? item.logoDark : item.logo}
                   alt={item.alt_text}
                   className="w-6 md:w-8 h-6 md:h-8"
                 />
