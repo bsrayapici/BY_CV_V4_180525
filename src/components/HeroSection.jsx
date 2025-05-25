@@ -47,18 +47,18 @@ const HeroSection = () => {
         aria-hidden="true"
         className="hidden md:block absolute w-[160px] h-[120px] left-[421px] top-[-45px]"
         loading="lazy"
-        fetchPriority="low"
+        fetchpriority="low"
       />
 
       <div className="flex flex-col lg:flex-row items-center justify-between max-w-7xl mx-auto gap-12">
         {/* Text Content */}
         <div className="w-full lg:w-1/2 relative z-10 text-center lg:text-left">
-          <h2 
+          <h1 
             id="hero-title"
             className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4"
           >
             {hero.greeting}
-          </h2>
+          </h1>
 
           {/* Introduction with highlight */}
           <div className="relative inline-block">
@@ -90,7 +90,7 @@ const HeroSection = () => {
                   alt=""
                   className="w-6 md:w-8 h-6 md:h-8"
                   loading="lazy"
-                  fetchPriority="low"
+                  fetchpriority="low"
                   aria-hidden="true"
                 />
                 <span className="sr-only">{item.alt_text}</span>
@@ -121,7 +121,7 @@ const HeroSection = () => {
               transform: 'translateX(-50%)',
             }}
             loading="eager"
-            fetchPriority="high"
+            fetchpriority="high"
           />
         </div>
       </div>
