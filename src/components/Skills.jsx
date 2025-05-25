@@ -37,16 +37,14 @@ function Skills() {
               key={index}
               className="flex flex-col items-center gap-4 transform transition-transform hover:scale-110"
             >
-              <div className="w-16 md:w-24 h-16 md:h-24 bg-gray-100 dark:bg-gray-100 rounded-lg flex items-center justify-center p-3 md:p-4">
+              <div className="w-16 md:w-20 h-26 md:h-24  flex items-center justify-center p-3 md:p-4">
                 <img 
                   src={skill.icon} 
                   alt={skill.name}
-                  className="w-10 md:w-16 h-10 md:h-16 object-contain"
+                  className="w-50 md:w-50 h-50 md:h-50 object-contain"
                 />
               </div>
-              <h3 className="text-xs md:text-sm font-medium text-black dark:text-white uppercase tracking-wider text-center">
-                {skill.name}
-              </h3>
+             
             </div>
           ))}
         </div>
