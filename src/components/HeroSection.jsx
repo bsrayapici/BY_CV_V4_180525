@@ -6,29 +6,21 @@ import { data } from '../constants/data';
 import profileImage from '../assets/profile-image.jpg';
 import ellipse10 from '../assets/Ellipse 10.png';
 
-/**
- * HeroSection Component
- * 
- * Main landing section of the portfolio featuring:
- * - Personal introduction
- * - Profile image with custom styling
- * - Social media links
- * - Call-to-action message
- */
 const HeroSection = () => {
   const { language } = useLanguage();
-  const { theme } = useTheme();
+  const { theme } = useTheme(); // dark veya light
   const hero = data[language].heroSection;
 
   return (
     <section className="relative w-full h-full py-12 md:py-20 overflow-hidden bg-[#F4F4F4] dark:bg-[#0A0A14] text-black dark:text-white px-4 md:px-8 lg:px-16">
-      {/* Decorative pink rectangle */}
+      
+      {/* 🎯 Pink rectangle - centered to profile image */}
       <div
         aria-hidden="true"
         className="absolute right-0 bottom-[25px] w-[32px] h-[16px] sm:w-[40px] sm:h-[20px] md:w-[60px] md:h-[35px] bg-[#EA2678] rounded-r-full rotate-180"
-      />
+      ></div>
 
-      {/* Decorative circle */}
+      {/* 🎯 Decorative circle top-left */}
       <img
         src={ellipse10}
         alt=""
@@ -37,13 +29,13 @@ const HeroSection = () => {
       />
 
       <div className="flex flex-col lg:flex-row items-center justify-between max-w-7xl mx-auto gap-12">
-        {/* Text Content */}
+        
+        {/* Left Side: Text Content */}
         <div className="w-full lg:w-1/2 relative z-10 text-center lg:text-left">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             {hero.greeting}
           </h1>
 
-          {/* Introduction with highlight */}
           <div className="relative inline-block">
             <div
               aria-hidden="true"
@@ -54,7 +46,6 @@ const HeroSection = () => {
             </h2>
           </div>
 
-          {/* Social Media Links */}
           <div className="flex justify-center lg:justify-start gap-6">
             {hero.socials.map((item, index) => (
               <a
@@ -73,14 +64,13 @@ const HeroSection = () => {
             ))}
           </div>
 
-          {/* Call to Action */}
           <p
             className="text-base md:text-lg mb-8 mt-2"
             dangerouslySetInnerHTML={{ __html: hero.ctaHTML }}
           />
         </div>
 
-        {/* Profile Image */}
+        {/* Right Side: Profile Image in Pink Box */}
         <div className="relative w-[260px] md:w-[320px] h-[260px] md:h-[320px]">
           <div className="w-full h-full bg-[#E92577] rounded-[32px]" />
           <img
