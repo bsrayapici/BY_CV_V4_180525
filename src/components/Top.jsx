@@ -1,6 +1,25 @@
 import { useLanguage } from '../contexts/LanguageContext';
 import { useTheme } from '../contexts/ThemeContext';
 
+/**
+ * Top Component
+ * 
+ * Navigation bar with:
+ * - Dark mode toggle
+ * - Language switcher
+ * 
+ * Features:
+ * - Fixed positioning
+ * - Smooth transitions
+ * - Responsive design
+ * - Accessibility support
+ * 
+ * @component
+ * @example
+ * return (
+ *   <Top />
+ * )
+ */
 function Top() {
   const { language, setLanguage } = useLanguage();
   const { darkMode, toggleTheme } = useTheme();
@@ -10,11 +29,12 @@ function Top() {
       <div className="flex items-center gap-8 md:gap-2">
         {/* Theme toggle switch */}
         <div className="flex items-center gap-2">
-          <div
+          <button
+            onClick={toggleTheme}
             className={`w-14 h-7 flex items-center ${
               darkMode ? 'bg-[#E92577]' : 'bg-gray-200'
             } rounded-full p-1 cursor-pointer transition-colors duration-300 ease-in-out`}
-            onClick={toggleTheme}
+            aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
           >
             {/* Animated switch dot */}
             <div
@@ -23,17 +43,19 @@ function Top() {
                   ? 'translate-x-7 bg-[#FFE86E]'
                   : 'translate-x-0 bg-white'
               }`}
+              aria-hidden="true"
             />
-          </div>
+          </button>
 
           <span className="text-sm text-black dark:text-white">DARK MODE</span>
         </div>
 
         {/* Language switcher */}
-        <span className="mx-2 text-black dark:text-white">|</span>
+        <span className="mx-2 text-black dark:text-white" aria-hidden="true">|</span>
         <button
           onClick={() => setLanguage(language === 'en' ? 'tr' : 'en')}
           className="text-sm hover:opacity-80 transition-opacity"
+          aria-label={language === 'en' ? 'Switch to Turkish' : 'Switch to English'}
         >
           {language === 'en' ? (
             <>
