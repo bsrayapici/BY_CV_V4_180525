@@ -7,7 +7,7 @@ function Top() {
 
   return (
     <div className="fixed top-0 right-0 p-6 flex items-center gap-4 z-50">
-      <div className="flex items-center gap-8 md:gap-2">
+      <div className="flex items-center gap-4">
         <div className="flex items-center gap-2">
           <div
             className={`w-14 h-7 flex items-center ${
