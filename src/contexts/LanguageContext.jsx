@@ -1,37 +1,21 @@
+// Import necessary hooks from React
 import { createContext, useContext, useState, useEffect } from "react";
 
-/**
- * LanguageContext
- * 
- * Manages the application's language state with:
- * - Local storage persistence
- * - Language switching functionality
- * - Default language fallback
- * 
- * @context
- */
+// Create context for language management
 const LanguageContext = createContext();
 
-/**
- * LanguageProvider Component
- * 
- * Provides language context to the application with:
- * - Language state management
- * - Local storage synchronization
- * 
- * @component
- * @param {Object} props
- * @param {React.ReactNode} props.children - Child components
- */
 export const LanguageProvider = ({children}) => {
+  // Initialize language state from localStorage
   const [language, setLanguage] = useState(() => {
     return localStorage.getItem("language") || "en";
   });
 
+  // Update localStorage when language changes
   useEffect(() => {
     localStorage.setItem("language", language);
   }, [language]);
 
+  // Provide language context to children
   return (
     <LanguageContext.Provider value={{language, setLanguage}}>
       {children}
@@ -39,11 +23,5 @@ export const LanguageProvider = ({children}) => {
   );
 };
 
-/**
- * useLanguage Hook
- * 
- * Custom hook for accessing language context
- * 
- * @returns {Object} Language context value
- */
+// Custom hook for using language context
 export const useLanguage = () => useContext(LanguageContext);

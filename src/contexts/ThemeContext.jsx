@@ -1,35 +1,17 @@
+// ThemeContext.jsx - Manages application-wide theme state
 import { createContext, useContext, useState, useEffect } from 'react';
 
-/**
- * ThemeContext
- * 
- * Manages the application's theme state (dark/light mode) with:
- * - Local storage persistence
- * - Automatic document class updates
- * - Theme toggle functionality
- * 
- * @context
- */
+// Create context for theme management
 const ThemeContext = createContext();
 
-/**
- * ThemeProvider Component
- * 
- * Provides theme context to the application with:
- * - Theme state management
- * - Local storage synchronization
- * - Document class handling
- * 
- * @component
- * @param {Object} props
- * @param {React.ReactNode} props.children - Child components
- */
 export const ThemeProvider = ({ children }) => {
+  // Initialize dark mode state from localStorage with fallback
   const [darkMode, setDarkMode] = useState(() => {
     const storedValue = localStorage.getItem('theme');
     return storedValue === 'dark';
   });
 
+  // Sync theme changes with document classes and localStorage
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add('dark');
@@ -40,10 +22,12 @@ export const ThemeProvider = ({ children }) => {
     }
   }, [darkMode]);
 
+  // Toggle theme function with functional update pattern
   const toggleTheme = () => {
     setDarkMode(prev => !prev);
   };
 
+  // Provide theme context to children components
   return (
     <ThemeContext.Provider value={{ darkMode, toggleTheme }}>
       {children}
@@ -51,14 +35,7 @@ export const ThemeProvider = ({ children }) => {
   );
 };
 
-/**
- * useTheme Hook
- * 
- * Custom hook for accessing theme context with error handling
- * 
- * @returns {Object} Theme context value
- * @throws {Error} If used outside ThemeProvider
- */
+// Custom hook for consuming theme context with error handling
 export const useTheme = () => {
   const context = useContext(ThemeContext);
   if (!context) {
