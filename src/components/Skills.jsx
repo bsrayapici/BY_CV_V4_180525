@@ -7,19 +7,12 @@ function Skills() {
   const skills = data[language].skillsSection;
 
   return (
-//<section className="min-h-[350px] py-20 px-4 md:px-8 lg:px-16 bg-white dark:bg-[#0A0A14] relative overflow-visible">      {/* Gray decorative element  tonhe left */}
-   //   <div 
-  //      aria-hidden="true"
-      
- // className="absolute left-0 top-[90%] w-[160px] md:w-[120px] h-[-20px] md:h-[80px] bg-gray-600 rounded-r-full transform -translate-y-1/2"
-///>
-<section className="min-h-[350px] py-20 px-4 md:px-8 lg:px-16 bg-white dark:bg-[#2a3141] relative overflow-visible">
-  {/* ✅ Sol altta yarım oval şekil */}
-  <div
-    aria-hidden="true"
-    className="absolute left-0 bottom-[25px] w-[32px] h-[16px] sm:w-[40px] sm:h-[20px] md:w-[60px] md:h-[35px] bg-[#525252] rounded-r-full"
-  ></div>
-    
+    <section className="min-h-[350px] py-20 px-4 md:px-8 lg:px-16 bg-white dark:bg-[#2a3141] relative overflow-visible">
+      {/* Left bottom oval shape */}
+      <div
+        aria-hidden="true"
+        className="absolute left-0 bottom-[25px] w-[32px] h-[16px] sm:w-[40px] sm:h-[20px] md:w-[60px] md:h-[35px] bg-[#525252] rounded-r-full"
+      />
       
       {/* Light gray circle in the top-right */}
       <div 
@@ -35,9 +28,9 @@ function Skills() {
           {skills.skills.map((skill, index) => (
             <div 
               key={index}
-              className="flex flex-col items-center gap-4 transform transition-transform hover:scale-110"
+              className="flex flex-col items-center gap-2.5 w-[146px] h-[166px]"
             >
-              <div className="w-16 md:w-24 h-16 md:h-24 bg-gray-100 dark:bg-gray-100 rounded-lg flex items-center justify-center p-3 md:p-4">
+              <div className="flex items-center justify-center p-3 md:p-4 w-16 md:w-24 h-16 md:h-24 rounded-lg transition-transform hover:scale-110">
                 <img 
                   src={skill.icon} 
                   alt={skill.name}
