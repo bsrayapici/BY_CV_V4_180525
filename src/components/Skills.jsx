@@ -37,9 +37,7 @@ function Skills() {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <span className="text-lg md:text-xl font-medium text-black dark:text-white">
-                {skill.name}
-              </span>
+
             </div>
           ))}
         </div>
