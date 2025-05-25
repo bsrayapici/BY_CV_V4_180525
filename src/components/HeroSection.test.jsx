@@ -43,4 +43,4 @@ describe('HeroSection', () => {
     expect(profileImg).toBeInTheDocument();
     expect(profileImg).toHaveAttribute('src', expect.stringContaining('profile-image'));
   });
-});
+}); 
