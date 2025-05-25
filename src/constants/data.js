@@ -4,17 +4,17 @@ export const data = {
       greeting: 'Hi! 👋',
       intro:
         "I'm Almila. I'm a full-stack developer. I can craft solid and scalable frontend products. Let's meet!",
-      profileImage: '/src/assets/profile-image.jpg',
+      profileImage: 'https://images.pexels.com/photos/3799324/pexels-photo-3799324.jpeg',
       socials: [
         {
-          logo: '/src/assets/logo-linkeding.jpg',
-          darkLogo: '/src/assets/logo-linkeding.jpg',
+          logo: 'https://cdn-icons-png.flaticon.com/512/174/174857.png',
+          darkLogo: 'https://cdn-icons-png.flaticon.com/512/3536/3536505.png',
           alt_text: 'linkedin',
           link: 'https://example.com',
         },
         {
-          logo: '/src/assets/logo-github.png',
-          darkLogo: '/src/assets/github-white.png',
+          logo: 'https://cdn-icons-png.flaticon.com/512/25/25231.png',
+          darkLogo: 'https://cdn-icons-png.flaticon.com/512/733/733553.png',
           alt_text: 'github',
           link: 'https://github.com',
         },
@@ -27,27 +27,27 @@ export const data = {
       skills: [
         {
           name: 'Javascript',
-          icon: '/src/assets/darkmode/js.png',
+          icon: 'https://cdn-icons-png.flaticon.com/512/5968/5968292.png',
         },
         {
           name: 'React',
-          icon: '/src/assets/darkmode/react.png',
+          icon: 'https://cdn-icons-png.flaticon.com/512/1126/1126012.png',
         },
         {
           name: 'Node',
-          icon: '/src/assets/darkmode/node.png',
+          icon: 'https://cdn-icons-png.flaticon.com/512/5968/5968322.png',
         },
         {
           name: 'Figma',
-          icon: '/src/assets/darkmode/figma.png',
+          icon: 'https://cdn-icons-png.flaticon.com/512/5968/5968705.png',
         },
         {
           name: 'Redux',
-          icon: '/src/assets/darkmode/redux.png',
+          icon: 'https://cdn-icons-png.flaticon.com/512/520/520890.png',
         },
         {
           name: 'VS Code',
-          icon: '/src/assets/darkmode/redux-1.png',
+          icon: 'https://cdn-icons-png.flaticon.com/512/906/906324.png',
         },
       ],
     },
@@ -86,7 +86,7 @@ export const data = {
           title: 'Random Jokes',
           description:
             'A fun web app that generates random jokes using a REST API',
-          image: '/src/assets/ornek.jpg',
+          image: 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg',
           technologies: ['React', 'Vite', 'Axios'],
           demo: 'https://example.com/demo1',
           github: 'https://github.com/example/random-jokes',
@@ -95,7 +95,7 @@ export const data = {
           title: 'Are you bored?',
           description:
             "An interactive app suggesting activities when you're bored",
-          image: '/src/assets/ornek_iki.jpg',
+          image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg',
           technologies: ['React', 'Redux', 'Axios'],
           demo: 'https://example.com/demo2',
           github: 'https://github.com/example/bored-app',
@@ -111,17 +111,17 @@ export const data = {
       greeting: 'Merhaba! 👋',
       intro:
         'Ben Almila. Full-stack geliştiriciyim. Sağlam ve ölçeklenebilir frontend ürünleri üretebilirim. Tanışalım!',
-      profileImage: '/src/assets/profile-image.jpg',
+      profileImage: 'https://images.pexels.com/photos/3799324/pexels-photo-3799324.jpeg',
       socials: [
         {
-          logo: '/src/assets/logo-linkeding.jpg',
-          darkLogo: '/src/assets/logo-linkeding.jpg',
+          logo: 'https://cdn-icons-png.flaticon.com/512/174/174857.png',
+          darkLogo: 'https://cdn-icons-png.flaticon.com/512/3536/3536505.png',
           alt_text: 'linkedin',
           link: 'https://example.com',
         },
         {
-          logo: '/src/assets/logo-github.png',
-          darkLogo: '/src/assets/github-white.png',
+          logo: 'https://cdn-icons-png.flaticon.com/512/25/25231.png',
+          darkLogo: 'https://cdn-icons-png.flaticon.com/512/733/733553.png',
           alt_text: 'github',
           link: 'https://github.com',
         },
@@ -134,27 +134,27 @@ export const data = {
       skills: [
         {
           name: 'HTML',
-          icon: '/src/assets/darkmode/js.png',
+          icon: 'https://cdn-icons-png.flaticon.com/512/1051/1051277.png',
         },
         {
           name: 'CSS',
-          icon: '/src/assets/darkmode/react.png',
+          icon: 'https://cdn-icons-png.flaticon.com/512/732/732190.png',
         },
         {
           name: 'JavaScript',
-          icon: '/src/assets/darkmode/node.png',
+          icon: 'https://cdn-icons-png.flaticon.com/512/5968/5968292.png',
         },
         {
           name: 'Figma',
-          icon: '/src/assets/darkmode/figma.png',
+          icon: 'https://cdn-icons-png.flaticon.com/512/5968/5968705.png',
         },
         {
           name: 'Redux',
-          icon: '/src/assets/darkmode/redux.png',
+          icon: 'https://cdn-icons-png.flaticon.com/512/520/520890.png',
         },
         {
           name: 'VS Code',
-          icon: '/src/assets/darkmode/redux-1.png',
+          icon: 'https://cdn-icons-png.flaticon.com/512/906/906324.png',
         },
       ],
     },
@@ -193,7 +193,7 @@ export const data = {
           title: 'Rastgele Şakalar',
           description:
             'REST API kullanarak rastgele şakalar üreten eğlenceli bir web uygulaması',
-          image: '/src/assets/ornek.jpg',
+          image: 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg',
           technologies: ['React', 'Vite', 'Axios'],
           demo: 'https://example.com/demo1',
           github: 'https://github.com/example/random-jokes',
@@ -202,7 +202,7 @@ export const data = {
           title: 'Sıkıldın mı?',
           description:
             'Sıkıldığınızda aktiviteler öneren interaktif bir uygulama',
-          image: '/src/assets/ornek_iki.jpg',
+          image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg',
           technologies: ['React', 'Redux', 'Axios'],
           demo: 'https://example.com/demo2',
           github: 'https://github.com/example/bored-app',
