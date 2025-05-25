@@ -14,11 +14,11 @@ function Projects() {
   return (
     <section className="py-20 px-4 md:px-8 lg:px-16 bg-white dark:bg-[#0A0A14]">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-black dark:text-white text-center md:text-left">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-black dark:text-white text-center">
           {projects.title}
         </h2>
 
-        {/* Proje kartları */}
+        {/* Project cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {projects.items.map((project, index) => (
             <div
@@ -56,12 +56,8 @@ function Projects() {
                   <img
                     src={project.image}
                     alt={`${project.title} Screenshot`}
-                   // className="absolute top-[5%] left-[9%] w-[12%] h-[72%] object-fill rounded-md z-10"
-               
-  
-  className="absolute top-[1.6%] right-[12.3%] w-[75%] h-[90%] object-fill rounded-md z-10"
-/>
-                
+                    className="absolute top-[1.6%] right-[12.3%] w-[75%] h-[90%] object-fill rounded-md z-10"
+                  />
                   <img
                     src={laptopFrame}
                     alt="Laptop Frame"
