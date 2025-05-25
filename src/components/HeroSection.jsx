@@ -53,12 +53,12 @@ const HeroSection = () => {
       <div className="flex flex-col lg:flex-row items-center justify-between max-w-7xl mx-auto gap-12">
         {/* Text Content */}
         <div className="w-full lg:w-1/2 relative z-10 text-center lg:text-left">
-          <h1 
+          <h2 
             id="hero-title"
             className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4"
           >
             {hero.greeting}
-          </h1>
+          </h2>
 
           {/* Introduction with highlight */}
           <div className="relative inline-block">
