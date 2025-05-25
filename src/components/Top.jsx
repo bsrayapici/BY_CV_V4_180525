@@ -8,6 +8,7 @@ function Top() {
   return (
     <div className="fixed top-0 right-0 p-6 flex items-center gap-4 z-50">
       <div className="flex items-center gap-8 md:gap-2">
+        {/* Theme toggle switch */}
         <div className="flex items-center gap-2">
           <div
             className={`w-14 h-7 flex items-center ${
@@ -15,6 +16,7 @@ function Top() {
             } rounded-full p-1 cursor-pointer transition-colors duration-300 ease-in-out`}
             onClick={toggleTheme}
           >
+            {/* Animated switch dot */}
             <div
               className={`w-5 h-5 rounded-full shadow-md transform duration-300 ease-in-out ${
                 darkMode
@@ -27,6 +29,7 @@ function Top() {
           <span className="text-sm text-black dark:text-white">DARK MODE</span>
         </div>
 
+        {/* Language switcher */}
         <span className="mx-2 text-black dark:text-white">|</span>
         <button
           onClick={() => setLanguage(language === 'en' ? 'tr' : 'en')}

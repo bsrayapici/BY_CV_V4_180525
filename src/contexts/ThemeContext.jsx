@@ -1,17 +1,17 @@
-// Import necessary hooks from React
+// ThemeContext.jsx - Manages application-wide theme state
 import { createContext, useContext, useState, useEffect } from 'react';
 
 // Create context for theme management
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  // Initialize dark mode state from localStorage
+  // Initialize dark mode state from localStorage with fallback
   const [darkMode, setDarkMode] = useState(() => {
     const storedValue = localStorage.getItem('theme');
     return storedValue === 'dark';
   });
 
-  // Update document class and localStorage when theme changes
+  // Sync theme changes with document classes and localStorage
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add('dark');
@@ -22,12 +22,12 @@ export const ThemeProvider = ({ children }) => {
     }
   }, [darkMode]);
 
-  // Toggle theme function
+  // Toggle theme function with functional update pattern
   const toggleTheme = () => {
     setDarkMode(prev => !prev);
   };
 
-  // Provide theme context to children
+  // Provide theme context to children components
   return (
     <ThemeContext.Provider value={{ darkMode, toggleTheme }}>
       {children}
@@ -35,7 +35,7 @@ export const ThemeProvider = ({ children }) => {
   );
 };
 
-// Custom hook for using theme context
+// Custom hook for consuming theme context with error handling
 export const useTheme = () => {
   const context = useContext(ThemeContext);
   if (!context) {
