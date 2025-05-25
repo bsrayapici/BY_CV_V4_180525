@@ -21,7 +21,9 @@ function Skills() {
       />
 
       <div className="max-w-7xl mx-auto">
-
+        <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center text-black dark:text-white">
+          {skills.title}
+        </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 md:gap-16 justify-items-center">
           {skills.skills.map((skill, index) => (
             <div 
@@ -35,9 +37,6 @@ function Skills() {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <h3 className="text-base md:text-lg font-medium text-black dark:text-white tracking-wider text-center">
-                {skill.name}
-              </h3>
             </div>
           ))}
         </div>
