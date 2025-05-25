@@ -5,6 +5,9 @@ import { data } from '../constants/data';
 
 import profileImage from '../assets/profile-image.jpg';
 import ellipse10 from '../assets/Ellipse 10.png';
+import redux from '../assets/darkmode/redux.png';
+
+
 
 const HeroSection = () => {
   const { language } = useLanguage();
