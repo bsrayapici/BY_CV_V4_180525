@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
 import { data } from '../constants/data';
 
-import laptopFrame from '../assets/laptop.png';
+import laptopFrame from '/images/laptop.png';
 
 function Projects() {
   const { language } = useLanguage();

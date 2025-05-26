@@ -4,19 +4,19 @@ export const data = {
       greeting: 'Hi! 👋',
       intro:
         "I'm Almila. I'm a full-stack developer. I can craft solid and scalable frontend products. Let's meet!",
-      profileImage: '/src/assets/profile-image.jpg',
+      profileImage: '/images/profile-image.jpg',
       socials: [
         {
-          logo: '/src/assets/logo-linkeding.jpg',
-          darkLogo: '/src/assets/logo-linkeding.jpg',
+          logo: '/images/logo-linkeding.jpg',
+          darkLogo: '/images/darkmode/logo-linkeding.jpg',
           alt_text: 'linkedin',
           link: 'https://example.com',
         },
         {
-          logo: '/src/assets/logo-github.png',
+          logo: '/images/logo-github.png',
           alt_text: 'github',
           link: 'https://github.com',
-          darkLogo: '/src/assets/github-white.png'
+          darkLogo: '/images/github-white.png'
         },
       ],
       ctaHTML:
@@ -27,15 +27,16 @@ export const data = {
       skills: [
         {
           name: 'Javascript',
-          icon: '/src/assets/darkmode/js.png',
+          icon: "/images/darkmode/js.png",
+          
         },
         {
           name: 'React',
-          icon: '/src/assets/darkmode/react.png',
+          icon: '/images/darkmode/react.png',
         },
         {
           name: 'Node',
-          icon: '/src/assets/darkmode/node.png',
+          icon: '/images/darkmode/node.png',
         },
         {
           name: 'Figma',
@@ -43,11 +44,11 @@ export const data = {
         },
         {
           name: 'Redux',
-          icon: '/src/assets/darkmode/redux.png',
+          icon: '/images/darkmode/redux.png',
         },
         {
           name: 'VS Code',
-          icon: '/src/assets/darkmode/redux-1.png',
+          icon: '/images/darkmode/redux-1.png',
         },
       ],
     },
@@ -86,7 +87,7 @@ export const data = {
           title: 'Random Jokes',
           description:
             'A fun web app that generates random jokes using a REST API',
-          image: '/src/assets/ornek.jpg',
+          image: '/images/ornek.jpg',
           technologies: ['React', 'Vite', 'Axios'],
           demo: 'https://example.com/demo1',
           github: 'https://github.com/example/random-jokes',
@@ -95,7 +96,7 @@ export const data = {
           title: 'Are you bored?',
           description:
             "An interactive app suggesting activities when you're bored",
-          image: '/src/assets/ornek_iki.jpg',
+          image: '/images/ornek_iki.jpg',
           technologies: ['React', 'Redux', 'Axios'],
           demo: 'https://example.com/demo2',
           github: 'https://github.com/example/bored-app',
@@ -111,18 +112,18 @@ export const data = {
       greeting: 'Merhaba! 👋',
       intro:
         'Ben Almila. Full-stack geliştiriciyim. Sağlam ve ölçeklenebilir frontend ürünleri üretebilirim. Tanışalım!',
-      profileImage: '/src/assets/profile-image.jpg',
+      profileImage: '/images/profile-image.jpg',
       socials: [
         {
-          logo: '/src/assets/logo-linkeding.jpg',
+          logo: '/images/logo-linkeding.jpg',
           alt_text: 'linkedin',
           link: 'https://example.com',
         },
         {
-          logo: '/src/assets/logo-github.png',
+          logo: '/images/logo-github.png',
           alt_text: 'github',
           link: 'https://github.com',
-          darkLogo: '/src/assets/github-white.png'
+          darkLogo: '/images/github-white.png'
         },
       ],
       ctaHTML:
@@ -133,15 +134,15 @@ export const data = {
       skills: [
         {
           name: 'HTML',
-          icon: '/src/assets/darkmode/js.png',
+          icon: '/images/darkmode/js.png',
         },
         {
           name: 'CSS',
-          icon: '/src/assets/darkmode/react.png',
+          icon: '/images/darkmode/react.png',
         },
         {
           name: 'JavaScript',
-          icon: '/src/assets/darkmode/node.png',
+          icon: '/images/darkmode/node.png',
         },
         { 
           name: 'Figma', 
@@ -149,11 +150,11 @@ export const data = {
         },
         { 
           name: 'Redux', 
-          icon: '/src/assets/darkmode/redux.png'
+          icon: '/images/darkmode/redux.png'
         },
         { 
           name: 'VS Code', 
-          icon: '/src/assets/darkmode/redux-1.png'
+          icon: '/images/darkmode/redux-1.png'
         },
       ],
     },
@@ -192,7 +193,7 @@ export const data = {
           title: 'Rastgele Şakalar',
           description:
             'REST API kullanarak rastgele şakalar üreten eğlenceli bir web uygulaması',
-          image: '/src/assets/ornek.jpg',
+          image: '/images/ornek.jpg',
           technologies: ['React', 'Vite', 'Axios'],
           demo: 'https://example.com/demo1',
           github: 'https://github.com/example/random-jokes',
@@ -201,7 +202,7 @@ export const data = {
           title: 'Sıkıldın mı?',
           description:
             'Sıkıldığınızda aktiviteler öneren interaktif bir uygulama',
-          image: '/src/assets/ornek_iki.jpg',
+          image: '/images/ornek_iki.jpg',
           technologies: ['React', 'Redux', 'Axios'],
           demo: 'https://example.com/demo2',
           github: 'https://github.com/example/bored-app',
