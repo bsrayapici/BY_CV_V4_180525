@@ -3,8 +3,6 @@ import { useTheme } from '../contexts/ThemeContext';
 import { useLanguage } from '../contexts/LanguageContext';
 import { data } from '../constants/data';
 
-import ellipse10 from '../assets/Ellipse 10.png';
-
 const HeroSection = () => {
   const { language } = useLanguage();
   const { theme } = useTheme(); // dark veya light
@@ -20,11 +18,9 @@ const HeroSection = () => {
       ></div>
 
       {/* 🎯 Decorative circle top-left */}
-      <img
-        src={ellipse10}
-        alt=""
+      <div
         aria-hidden="true"
-        className="hidden md:block absolute w-[160px] h-[120px] left-[421px] top-[-45px]"
+        className="hidden md:block absolute w-[160px] h-[120px] left-[421px] top-[-45px] bg-[#93d0f4] rounded-full opacity-50"
       />
 
       <div className="flex flex-col lg:flex-row items-center justify-between max-w-7xl mx-auto gap-12">
