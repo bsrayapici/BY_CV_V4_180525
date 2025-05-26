@@ -35,7 +35,7 @@ export const data = {
         },
         {
           name: 'Node',
-          icon: '/src/assets/darkmode/node.png',
+          icon: '/src/node.png',
         },
         {
           name: 'Figma',
