@@ -3,9 +3,6 @@ import { useTheme } from '../contexts/ThemeContext';
 import { useLanguage } from '../contexts/LanguageContext';
 import { data } from '../constants/data';
 
-import profileImage from '../assets/profile-image.jpg';
-import ellipse10 from '../assets/Ellipse 10.png';
-
 const HeroSection = () => {
   const { language } = useLanguage();
   const { theme } = useTheme(); // dark veya light
@@ -21,11 +18,9 @@ const HeroSection = () => {
       ></div>
 
       {/* 🎯 Decorative circle top-left */}
-      <img
-        src={ellipse10}
-        alt=""
+      <div
         aria-hidden="true"
-        className="hidden md:block absolute w-[160px] h-[120px] left-[421px] top-[-45px]"
+        className="hidden md:block absolute w-[160px] h-[120px] left-[421px] top-[-45px] bg-[#93d0f4] rounded-full opacity-50"
       />
 
       <div className="flex flex-col lg:flex-row items-center justify-between max-w-7xl mx-auto gap-12">
@@ -56,7 +51,7 @@ const HeroSection = () => {
                 className="hover:opacity-80 transition-opacity"
               >
                 <img
-                  src={theme === 'dark' && item.logoDark ? item.logoDark : item.logo}
+                  src={theme === 'dark' && item.darkLogo ? item.darkLogo : item.logo}
                   alt={item.alt_text}
                   className="w-6 md:w-8 h-6 md:h-8"
                 />
@@ -74,7 +69,7 @@ const HeroSection = () => {
         <div className="relative w-[260px] md:w-[320px] h-[260px] md:h-[320px]">
           <div className="w-full h-full bg-[#E92577] rounded-[32px]" />
           <img
-            src={profileImage}
+            src={hero.profileImage}
             alt="profile"
             className="absolute w-[257px] md:w-[317px] h-[257px] md:h-[317px] object-cover rounded-[22px]"
             style={{
