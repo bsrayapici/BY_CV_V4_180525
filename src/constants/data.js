@@ -13,7 +13,7 @@ export const data = {
           link: 'https://example.com',
         },
         {
-          logo: '/images/logo-github.png',
+          logo: '/images/github-white.png',
           alt_text: 'github',
           link: 'https://github.com',
           darkLogo: '/images/github-white.png'
@@ -120,7 +120,7 @@ export const data = {
           link: 'https://example.com',
         },
         {
-          logo: '/images/logo-github.png',
+          logo: '/images//images/github-white.png',
           alt_text: 'github',
           link: 'https://github.com',
           darkLogo: '/images/github-white.png'
