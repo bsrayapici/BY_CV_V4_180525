@@ -39,7 +39,7 @@ export const data = {
         },
         {
           name: 'Figma',
-          icon: '/src/assets/darkmode/figma.png',
+          icon: '/images/figma.png' ,
         },
         {
           name: 'Redux',
@@ -145,7 +145,7 @@ export const data = {
         },
         { 
         name: 'Figma', 
-        icon: '/src/assets/darkmode/figma.png' 
+        icon: '/images/figma.png' 
       },
   { 
     name: 'Redux', 
