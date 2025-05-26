@@ -4,19 +4,19 @@ export const data = {
       greeting: 'Hi! 👋',
       intro:
         "I'm Almila. I'm a full-stack developer. I can craft solid and scalable frontend products. Let's meet!",
-      profileImage: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg',
+      profileImage: '/src/assets/profile-image.jpg',
       socials: [
         {
-          logo: 'https://cdn-icons-png.flaticon.com/512/174/174857.png',
-          darkLogo: 'https://cdn-icons-png.flaticon.com/512/174/174857.png',
+          logo: '/src/assets/logo-linkeding.jpg',
+          darkLogo: '/src/assets/logo-linkeding.jpg',
           alt_text: 'linkedin',
           link: 'https://example.com',
         },
         {
-          logo: 'https://cdn-icons-png.flaticon.com/512/25/25231.png',
+          logo: '/src/assets/logo-github.png',
           alt_text: 'github',
           link: 'https://github.com',
-          darkLogo: 'https://cdn-icons-png.flaticon.com/512/25/25231.png'
+          darkLogo: '/src/assets/github-white.png'
         },
       ],
       ctaHTML:
@@ -27,27 +27,27 @@ export const data = {
       skills: [
         {
           name: 'Javascript',
-          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+          icon: '/src/assets/darkmode/js.png',
         },
         {
           name: 'React',
-          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+          icon: '/src/assets/darkmode/react.png',
         },
         {
           name: 'Node',
-          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
+          icon: '/src/assets/darkmode/node.png',
         },
         {
           name: 'Figma',
-          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
+          icon: '/images/figma.png',
         },
         {
           name: 'Redux',
-          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg',
+          icon: '/src/assets/darkmode/redux.png',
         },
         {
           name: 'VS Code',
-          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
+          icon: '/src/assets/darkmode/redux-1.png',
         },
       ],
     },
@@ -86,7 +86,7 @@ export const data = {
           title: 'Random Jokes',
           description:
             'A fun web app that generates random jokes using a REST API',
-          image: 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg',
+          image: '/src/assets/ornek.jpg',
           technologies: ['React', 'Vite', 'Axios'],
           demo: 'https://example.com/demo1',
           github: 'https://github.com/example/random-jokes',
@@ -95,7 +95,7 @@ export const data = {
           title: 'Are you bored?',
           description:
             "An interactive app suggesting activities when you're bored",
-          image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg',
+          image: '/src/assets/ornek_iki.jpg',
           technologies: ['React', 'Redux', 'Axios'],
           demo: 'https://example.com/demo2',
           github: 'https://github.com/example/bored-app',
@@ -111,18 +111,18 @@ export const data = {
       greeting: 'Merhaba! 👋',
       intro:
         'Ben Almila. Full-stack geliştiriciyim. Sağlam ve ölçeklenebilir frontend ürünleri üretebilirim. Tanışalım!',
-      profileImage: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg',
+      profileImage: '/src/assets/profile-image.jpg',
       socials: [
         {
-          logo: 'https://cdn-icons-png.flaticon.com/512/174/174857.png',
+          logo: '/src/assets/logo-linkeding.jpg',
           alt_text: 'linkedin',
           link: 'https://example.com',
         },
         {
-          logo: 'https://cdn-icons-png.flaticon.com/512/25/25231.png',
+          logo: '/src/assets/logo-github.png',
           alt_text: 'github',
           link: 'https://github.com',
-          darkLogo: 'https://cdn-icons-png.flaticon.com/512/25/25231.png'
+          darkLogo: '/src/assets/github-white.png'
         },
       ],
       ctaHTML:
@@ -133,27 +133,27 @@ export const data = {
       skills: [
         {
           name: 'HTML',
-          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+          icon: '/src/assets/darkmode/js.png',
         },
         {
           name: 'CSS',
-          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+          icon: '/src/assets/darkmode/react.png',
         },
         {
           name: 'JavaScript',
-          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
+          icon: '/src/assets/darkmode/node.png',
         },
         { 
           name: 'Figma', 
-          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg'
+          icon: '/images/figma.png'
         },
         { 
           name: 'Redux', 
-          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg'
+          icon: '/src/assets/darkmode/redux.png'
         },
         { 
           name: 'VS Code', 
-          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg'
+          icon: '/src/assets/darkmode/redux-1.png'
         },
       ],
     },
@@ -192,7 +192,7 @@ export const data = {
           title: 'Rastgele Şakalar',
           description:
             'REST API kullanarak rastgele şakalar üreten eğlenceli bir web uygulaması',
-          image: 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg',
+          image: '/src/assets/ornek.jpg',
           technologies: ['React', 'Vite', 'Axios'],
           demo: 'https://example.com/demo1',
           github: 'https://github.com/example/random-jokes',
@@ -201,7 +201,7 @@ export const data = {
           title: 'Sıkıldın mı?',
           description:
             'Sıkıldığınızda aktiviteler öneren interaktif bir uygulama',
-          image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg',
+          image: '/src/assets/ornek_iki.jpg',
           technologies: ['React', 'Redux', 'Axios'],
           demo: 'https://example.com/demo2',
           github: 'https://github.com/example/bored-app',
