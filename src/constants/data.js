@@ -141,7 +141,7 @@ export const data = {
           icon: '/images/darkmode/react.png',
         },
         {
-          name: 'JavaScript',
+          name: 'JavaScript', 
           icon: '/images/darkmode/node.png',
         },
         { 
