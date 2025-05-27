@@ -10,12 +10,12 @@ export const data = {
           logo: '/images/logo-linkeding.jpg',
           darkLogo: '/images/darkmode/logo-linkeding.jpg',
           alt_text: 'linkedin',
-          link: 'https://example.com',
+          link: 'https://www.linkedin.com/in/busra-yapici-72434514a/',
         },
         {
           logo: '/images/github-white.png',
           alt_text: 'github',
-          link: 'https://github.com',
+          link: "https://github.com/bsrayapici",
           darkLogo: '/images/github-white.png'
         },
       ],
@@ -117,12 +117,12 @@ export const data = {
         {
           logo: '/images/logo-linkeding.jpg',
           alt_text: 'linkedin',
-          link: 'https://example.com',
+          link: 'https://www.linkedin.com/in/busra-yapici-72434514a/',
         },
         {
-          logo: '/images//images/github-white.png',
+          logo: '/images/github-white.png',
           alt_text: 'github',
-          link: 'https://github.com',
+          link: 'https://github.com/bsrayapici',
           darkLogo: '/images/github-white.png'
         },
       ],
